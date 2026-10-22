@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>LocatorFinder fixture</title>
+  <script>var secretConfig = "do-not-capture";</script>
+  <style>.x{}</style>
+</head>
+<body>
+  <div><div><div>
+    <form id="loginForm">
+      <input id="123abc" type="text" placeholder="Digit id">
+      <input id="mat-input-7" placeholder="Email">
+      <input type="hidden" name="csrf_token" value="SESSION-TOKEN-XYZ">
+      <input name="prefilled" value="jane.doe@example.com">
+      <label for="phone-field">Phone</label><input id="phone-field" type="tel">
+      <label>Zip code <input></label>
+      <button type="submit">Login</button>
+      <button type="button">Cancel</button>
+      <input type="submit" value="Go">
+    </form>
+    <a href="/reset?token=SECRET123abcDEF456ghiJKL789">Reset password</a>
+    <a href="#top">Top</a>
+    <svg aria-label="Logo"><circle r="3"></circle></svg>
+    <input aria-label="line1
+line2">
+    <div data-test="qa-hook" data-session-token="abc">Hook</div>
+    <div data-qa="footer"><span class="footer-link Button_root__3xYz1 active">Help</span><button>Help</button></div>
+    <ul><li><a>One</a></li><li><a>One</a></li></ul>
+    <input type="radio" name="plan" value="free"><input type="radio" name="plan" value="pro">
+    <h2>Section title</h2>
+  </div></div></div>
+</body>
+</html>

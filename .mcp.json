@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "locatorfinder": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["D:/2026/LocatorFinder/LocatorFinder/dist/mcpServer.js"]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "locatorfinder",
+  "version": "0.2.0",
+  "private": true,
+  "description": "AI-assisted locator discovery and cross-framework validation",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/mcpServer.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test --test-concurrency=1 \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.52.0",
+    "selenium-webdriver": "^4.31.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/selenium-webdriver": "^4.1.28",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

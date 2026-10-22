@@ -1,0 +1,31 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Generated page inventories can contain application-specific details.
+locators/**
+!locators/.gitkeep
+
+# Keep proprietary implementation out of a public repository.
+src/private-core/
+
+# Core discovery and ranking logic: not published (see README, "Core files are not in the public repository").
+src/locatorStrategy.ts
+src/scanner.ts
+
+*.log
+
+# Local tooling and browser-session captures
+.venv/
+.playwright-mcp/
+.DS_Store
+
+# Test output
+test/.output/
+test/.output-mcp/
+
+# Files used by perform_action "upload" may be real documents; keep them local.
+fixtures/**
+!fixtures/.gitkeep
